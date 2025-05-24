@@ -47,7 +47,7 @@ Test the API:Use tools like Postman, curl, or a browser to interact with the API
 Example API Requests
 Below are example API requests using curl. Ensure the server is running before testing.
 1. Create a User
-curl -X POST http://localhost:3001/users \
+curl -X POST http://localhost:3001/register \
 -H "Content-Type: application/json" \
 -d '{
   "title": "Mr",
@@ -63,7 +63,7 @@ curl -X POST http://localhost:3001/users \
 }'
 
 2. Create a Book
-curl -X POST http://localhost:3000/books \
+curl -X POST http://localhost:3001/books \
 -H "Content-Type: application/json" \
 -d '{
   "title": "The Great Gatsby",
@@ -76,7 +76,7 @@ curl -X POST http://localhost:3000/books \
 }'
 
 3. Add a Review
-curl -X POST http://localhost:3000/reviews \
+curl -X POST http://localhost:3001/review/:bookId \
 -H "Content-Type: application/json" \
 -d '{
   "bookId": "<valid-book-id>",
@@ -87,11 +87,12 @@ curl -X POST http://localhost:3000/reviews \
 }'
 
 4. Get All Books
-curl -X GET http://localhost:3000/books
+curl -X GET http://localhost:3001/searc
 
 Notes:
 
 Replace <valid-user-id> and <valid-book-id> with actual MongoDB ObjectIDs.
 Use Postman for a GUI-based alternative to test these endpoints.
 
-
+Get Collection JSON using collection access key
+<https://api.postman.com/collections/39630867-1e8b13d2-6a96-43f3-a3c0-6414dbfc4e69?access_key=PMAT-01JW1BRAX515602VY0BPCYYXEK>
