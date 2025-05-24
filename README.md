@@ -95,4 +95,6 @@ Replace <valid-user-id> and <valid-book-id> with actual MongoDB ObjectIDs.
 Use Postman for a GUI-based alternative to test these endpoints.
 
 Get Collection JSON using collection access key
-<https://api.postman.com/collections/39630867-1e8b13d2-6a96-43f3-a3c0-6414dbfc4e69?access_key=PMAT-01JW1BRAX515602VY0BPCYYXEK>
+<https://api.postman.com/collections/39630867-1e8b13d2-6a96-43f3-a3c0-6414dbfc4e69?access_key="please paste access key here ">
+
+Access Key = PMAT-01JW1BRAX515602VY0BPCYYXEK
